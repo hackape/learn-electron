@@ -1,0 +1,54 @@
+{
+  "name": "electron-react-boilerplate",
+  "productName": "electron-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "main": "./main.js",
+  "author": {
+    "name": "C. T. Lin",
+    "email": "chentsulin@gmail.com",
+    "url": "https://github.com/chentsulin"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "mathjax": "^2.7.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ],
+    "env": {
+      "production": {
+        "presets": [
+          "react-optimize"
+        ],
+        "plugins": [
+          "babel-plugin-dev-expression"
+        ]
+      },
+      "development": {
+        "presets": [
+          "react-optimize"
+        ]
+      },
+      "test": {
+        "plugins": [
+          [
+            "webpack-loaders",
+            {
+              "config": "webpack.config.test.js",
+              "verbose": false
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

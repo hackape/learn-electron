@@ -1,0 +1,36 @@
+.file-reader
+  fixed(left 0 right 0 bottom 0)
+  height 45px
+  z-index 10000
+  background-color #fff
+  border-top 1px solid gray(80)
+  display: flex
+
+.button-controls .btn
+  margin 4px
+
+.file-input-controls
+  position relative
+
+  .file-item
+    height 100%
+    display flex
+    padding 4px 10px
+    align-items: center
+
+    .file-item-name
+      width 230px
+
+    .file-item-remove
+      margin-left auto
+      cursor pointer
+      &:before
+        content 'x'
+
+  .file-input-dropzone
+    opacity 0
+    absolute(0)
+
+
+.result-update-controls
+  margin-left auto

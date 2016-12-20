@@ -1,0 +1,55 @@
+@import "./mixins"
+@import "./variables"
+@import "./fileReader"
+
+.question-item
+  border-bottom 1px solid $gray-lighter
+
+  .edit
+    [contenteditable]
+      background-color gray(93)
+      white-space pre-wrap
+
+  .display
+    border-left 1px dotted $gray-lighter
+    .content-display
+      white-space pre-wrap
+
+  .metadata
+    display flex
+
+  .form-group > label
+    text-align right
+    white-space no-wrap
+
+.edit-controls
+  border 1px solid $gray-lighter
+  background-color white
+  z-index 10000
+  margin-lr -15px
+
+  .buttons-group
+    margin-left auto
+
+.question-abilities
+  display flex
+
+.question-item.active
+  .edit-controls
+    fixed(top 0px right left)
+    margin-lr 0
+
+.question-item-header
+  margin-bottom 10px
+
+.edit-controls-inner-container
+  width 50%
+  display flex
+  align-items center
+  margin auto
+  padding 15px
+
+.edit-controls-placeholder
+  height 72px
+  .btn-default
+    opacity 0

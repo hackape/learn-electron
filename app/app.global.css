@@ -1,0 +1,98 @@
+.file-reader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45px;
+  z-index: 10000;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+.button-controls .btn {
+  margin: 4px;
+}
+.file-input-controls {
+  position: relative;
+}
+.file-input-controls .file-item {
+  height: 100%;
+  display: flex;
+  padding: 4px 10px;
+  align-items: center;
+}
+.file-input-controls .file-item .file-item-name {
+  width: 230px;
+}
+.file-input-controls .file-item .file-item-remove {
+  margin-left: auto;
+  cursor: pointer;
+}
+.file-input-controls .file-item .file-item-remove:before {
+  content: 'x';
+}
+.file-input-controls .file-input-dropzone {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.result-update-controls {
+  margin-left: auto;
+}
+.question-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+.question-item .edit [contenteditable] {
+  background-color: #ededed;
+  white-space: pre-wrap;
+}
+.question-item .display {
+  border-left: 1px dotted #e0e0e0;
+}
+.question-item .display .content-display {
+  white-space: pre-wrap;
+}
+.question-item .metadata {
+  display: flex;
+}
+.question-item .form-group > label {
+  text-align: right;
+  white-space: no-wrap;
+}
+.edit-controls {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  z-index: 10000;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.edit-controls .buttons-group {
+  margin-left: auto;
+}
+.question-item.active .edit-controls {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.question-item-header {
+  margin-bottom: 10px;
+}
+.edit-controls-inner-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 15px;
+}
+.edit-controls-placeholder {
+  height: 72px;
+}
+.edit-controls-placeholder .btn-default {
+  opacity: 0;
+}

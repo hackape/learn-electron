@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>indicator; image address!</title>
+    <link rel='stylesheet' href='app.global.css' />
+    <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <script type='text/javascript' src='node_modules/jquery/dist/jquery.js'></script>
+    <script type="text/javascript">window.$ = require('jquery')</script>
+    <script type='text/javascript' src='node_modules/mathjax/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <!-- <script>
+      (function() {
+        if (!process.env.HOT) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './dist/style.css';
+          document.write(link.outerHTML);
+        }
+      }());
+    </script> -->
+  </head>
+  <body>
+    <div id="root">Hello</div>
+    <!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <!-- <script>
+      {
+        const script = document.createElement('script');
+        const port = process.env.PORT || 3000;
+        script.src = (process.env.HOT)
+          ? 'http://localhost:' + port + '/dist/bundle.js'
+          : './dist/bundle.js';
+        document.write(script.outerHTML);
+      }
+    </script> -->
+    <script>
+      require('babel-register')
+      require('./index.jsx')
+    </script>
+  </body>
+</html>
