@@ -141,7 +141,7 @@
     "redux": "^3.6.0",
     "redux-actions": "^1.1.0",
     "redux-thunk": "^2.1.0",
-    "source-map-support": "^0.4.6"
+    "source-map-support": "^0.4.6.2"
   },
   "devEngines": {
     "node": ">=6.x",
